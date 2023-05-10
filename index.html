@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphanem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<header>
+    <h1><b>KÜTÜPHANEM</b></h1>
+</header>
+
+
+<section class="kitapEkleme">
+    <div class="container">
+        <h3>Yeni Kitap Ekleme</h3>
+        <label for="KitapAdi">Kitabın Adı:</label>
+        <input type="text" id="KitapAdi"> <br>
+        <label for="KitapYazar">Kitabın Yazarı:</label>
+        <input type="text" id="KitapYazar"> <br>
+        <label for="KitapYil">Kitabın Basım Yılı:</label>
+        <input type="text" id="KitapYil"> <br>
+        <label for="KitapYayin">Kitabın Yayıncısı:</label>
+        <input type="text" id="KitapYayin"> <br>
+        <label for="KitapKategori">Kitabın Kategorisi:</label>
+        <input type="text" id="KitapKategori"> <br>
+        <label for="KitapNotu">Kitap Hakkında Not:</label>
+        <input type="text" id="KitapNotu"> <br>
+        <button class="ekle">Kütüphaneye Kitap Ekle!</button>
+        <button class="arama" onclick="arama()" >Kütüphanede Kitap Ara!</button>
+    </div>
+</section>
+
+<section class="kitapArama">
+    <div class="container">
+        <h3>Kitap Arama</h3>
+        <label for="KitapAdiSearch">Kitabın Adına Göre:</label>
+        <input type="text" id="KitapAdiSearch"> <br>
+        <label for="KitapYazarSearch">Kitabın Yazarına Göre:</label>
+        <input type="text" id="KitapYazarSearch"> <br>
+        <label for="KitapKategoriSearch">Kitabın Kategorisine Göre:</label>
+        <input type="text" id="KitapKategoriSearch"> <br>
+        <button class="ara">Listele!</button>
+        <button class="sec" onclick="randomKitap()" >Kütüphaneden Rastgele Kitap Seç!</button>
+        <button class="ekleme" onclick="ekleme()" >Kütüphaneye Kitap Ekle!</button>
+        <p class="bulunanKitap"></p>
+    </div>
+</section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
